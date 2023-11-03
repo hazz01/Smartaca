@@ -1,0 +1,339 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 41.1rem;
+}.notif-2xH {
+  width: 100%;
+  height: 82.3rem;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+}
+.notif-2xH .backgraund-MDs {
+  width: 41.3rem;
+  height: 100%;
+  position: relative;
+}
+.notif-2xH .backgraund-MDs .backgraund-1-6hF {
+  width: 41.2rem;
+  height: 42.8rem;
+  position: absolute;
+  left: 0;
+  top: 14.8rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.notif-2xH .backgraund-MDs .rectangle-27-eCy {
+  width: 41.3rem;
+  height: 24.8rem;
+  position: absolute;
+  left: 0;
+  top: 57.5rem;
+  background-color: #5bc882;
+}
+.notif-2xH .backgraund-MDs .rectangle-27-b8D {
+  width: 41.1rem;
+  height: 14.9rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #1a5f73;
+}
+.notif-2xH .backgraund-MDs .rectangle-28-Lbb {
+  width: 35rem;
+  height: 60.3rem;
+  position: absolute;
+  left: 3rem;
+  top: 11.9rem;
+  background-color: rgba(217, 217, 217, 0.8000000119);
+  border-radius: 6.3rem 6.3rem 0.6rem 6.3rem;
+}
+.notif-2xH .backgraund-MDs .textinfo-2jK {
+  width: 20.1rem;
+  height: 4.8rem;
+  position: absolute;
+  left: 10.45rem;
+  top: 18.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.notif-2xH .backgraund-MDs .textinfo-2jK .notification-y8m {
+  margin: 0rem 0rem 0.1rem 0.1rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  text-transform: capitalize;
+  color: #000000;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .textinfo-2jK .notifikasi-dari-perangkat-smartaca-anda-3uK {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif1-aeM {
+  box-sizing: border-box;
+  padding: 0.7rem 5.6rem 0.7rem 1.2rem;
+  width: 31.7rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 4.7rem;
+  top: 29.5rem;
+  display: flex;
+  align-items: center;
+  background-color: #dbdbdb;
+  border-radius: 0.7rem;
+}
+.notif-2xH .backgraund-MDs .notif1-aeM .image-2-66u {
+  margin-right: 2.3rem;
+  width: 3.1rem;
+  height: 3.1rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif1-aeM .suhu-mencapai-18c-peltier-dimatikan-ED7 {
+  margin-top: 0.3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif2-Jyf {
+  box-sizing: border-box;
+  padding: 0.8rem 5.8rem 0.6rem 1.2rem;
+  width: 31.7rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 4.7rem;
+  top: 34.7rem;
+  display: flex;
+  align-items: center;
+  background-color: #dbdbdb;
+  border-radius: 0.7rem;
+}
+.notif-2xH .backgraund-MDs .notif2-Jyf .image-13-ph7 {
+  margin-right: 1.5rem;
+  width: 3.1rem;
+  height: 3.1rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif2-Jyf .suhu-mencapai-28c-peltier-dihidupkan-xHX {
+  margin-top: 0.1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif3-qMK {
+  box-sizing: border-box;
+  padding: 0.3rem 7.1rem 0.3rem 1.1rem;
+  width: 31.7rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 4.8rem;
+  top: 39.9rem;
+  display: flex;
+  align-items: center;
+  background-color: #dbdbdb;
+  border-radius: 0.7rem;
+}
+.notif-2xH .backgraund-MDs .notif3-qMK .image-10-85X {
+  margin: 0rem 1.5rem 0.8rem 0rem;
+  width: 3.1rem;
+  height: 3.1rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif3-qMK .peringatan-himidimy-mencapai-50-f5T {
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif4-yrq {
+  box-sizing: border-box;
+  padding: 0.9rem 10.4rem 0.9rem 1.3rem;
+  width: 31.7rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 4.8rem;
+  top: 45.1rem;
+  display: flex;
+  align-items: center;
+  background-color: #dbdbdb;
+  border-radius: 0.7rem;
+}
+.notif-2xH .backgraund-MDs .notif4-yrq .image-9-T1K {
+  margin-right: 1.7rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif4-yrq .pompa-air-otomatis-dinyalakan-kFK {
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif5-FC5 {
+  box-sizing: border-box;
+  padding: 1.1rem 12.4rem 1rem 1.3rem;
+  width: 31.7rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 4.8rem;
+  top: 50.3rem;
+  display: flex;
+  align-items: center;
+  background-color: #dbdbdb;
+  border-radius: 0.7rem;
+}
+.notif-2xH .backgraund-MDs .notif5-FC5 .image-11-NGh {
+  margin-right: 1.8rem;
+  width: 2.6rem;
+  height: 2.4rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif5-FC5 .vitamin-otomatis-diberikan-vJD {
+  margin-top: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif6-2MF {
+  box-sizing: border-box;
+  padding: 0.7rem 9.3rem 0.7rem 1.1rem;
+  width: 31.7rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 4.8rem;
+  top: 55.5rem;
+  display: flex;
+  align-items: center;
+  background-color: #dbdbdb;
+  border-radius: 0.7rem;
+}
+.notif-2xH .backgraund-MDs .notif6-2MF .image-12-89P {
+  margin-right: 1.5rem;
+  width: 3.1rem;
+  height: 3.1rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif6-2MF .peringatan-suhu-mencapai-25c-drq {
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif7-xPK {
+  box-sizing: border-box;
+  padding: 0.6rem 5.9rem 0.8rem 1.1rem;
+  width: 31.7rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 4.8rem;
+  top: 60.7rem;
+  display: flex;
+  align-items: center;
+  background-color: #dbdbdb;
+  border-radius: 0.7rem;
+}
+.notif-2xH .backgraund-MDs .notif7-xPK .image-14-gKK {
+  margin-right: 1.5rem;
+  width: 3.1rem;
+  height: 3.1rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .notif7-xPK .suhu-mencapai-28c-peltier-dihidupkan-qCD {
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notif-2xH .backgraund-MDs .delete-kKB {
+  box-sizing: border-box;
+  padding: 0.8rem;
+  width: 4.1rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 32.4rem;
+  top: 67.1rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #d9d9d9;
+  border-radius: 0.8rem;
+}
+.notif-2xH .backgraund-MDs .delete-kKB .image-17-Ha1 {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.notif-2xH .backgraund-MDs .logo-4-NrM {
+  width: 23.4rem;
+  height: 3rem;
+  position: absolute;
+  left: 8.8rem;
+  top: 3.5rem;
+  object-fit: cover;
+  vertical-align: top;
+}

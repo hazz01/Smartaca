@@ -1,0 +1,141 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 41.1rem;
+}.first-U9w {
+  width: 100%;
+  height: 82.3rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  background-color: #f6f8fc;
+}
+.first-U9w .background-dHj {
+  width: 172rem;
+  height: 123.7rem;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.first-U9w .background-dHj .auto-group-gwjo-A2m {
+  width: 50rem;
+  height: 66.1rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.first-U9w .background-dHj .auto-group-gwjo-A2m .mesa-de-trabajo-1-1-tDf {
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+  left: 0;
+  top: 16.1rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.first-U9w .background-dHj .auto-group-gwjo-A2m .rectangle-22-E2d {
+  width: 41.1rem;
+  height: 16.4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #1a5f73;
+}
+.first-U9w .background-dHj .auto-group-gwjo-A2m .welcome-yF7 {
+  width: 24rem;
+  height: 9.1rem;
+  position: absolute;
+  left: 5.5rem;
+  top: 6.8rem;
+}
+.first-U9w .background-dHj .auto-group-gwjo-A2m .welcome-yF7 .welcome-76R {
+  margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #ffffff;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.first-U9w .background-dHj .auto-group-gwjo-A2m .welcome-yF7 .selamat-datang-di-aplilasi-smartaca-3Vs {
+  margin-bottom: 0.3rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #eaeaea;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.first-U9w .background-dHj .auto-group-gwjo-A2m .welcome-yF7 .anda-dapat--B6H {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #eaeaea;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.first-U9w .background-dHj .auto-group-gwjo-A2m .sign-in-with-google-h4d {
+  width: 26.6rem;
+  height: 4.6rem;
+  position: absolute;
+  left: 7.2rem;
+  top: 43.7rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #46a67d;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 0.2rem #46a67d;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+.first-U9w .background-dHj .auto-group-gwjo-A2m .create-an-account-kHo {
+  width: 26.6rem;
+  height: 4.6rem;
+  position: absolute;
+  left: 7.2rem;
+  top: 49.4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #ffffff;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #46a67d;
+  border-radius: 1rem;
+}
+.first-U9w .background-dHj .rectangle-23-bJR {
+  margin: 0rem 4.4rem 4.2rem 0rem;
+  width: 41.1rem;
+  height: 16.9rem;
+  background-color: #5bc882;
+  flex-shrink: 0;
+}
+.first-U9w .background-dHj .item-2480044-1-itq {
+  margin-right: 117.3rem;
+  opacity: 0.9;
+  width: 54.7rem;
+  height: 36.5rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}

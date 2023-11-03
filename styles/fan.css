@@ -1,0 +1,352 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 41.1rem;
+}.fan-DFw {
+  width: 100%;
+  height: 82.3rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #f6f8fc;
+}
+.fan-DFw .backgraund-SeV {
+  width: 41.3rem;
+  height: 82.3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.fan-DFw .backgraund-SeV .backgraund-1-pHf {
+  width: 41.2rem;
+  height: 42.8rem;
+  position: absolute;
+  left: 0;
+  top: 14.8rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.fan-DFw .backgraund-SeV .rectangle-27-5jP {
+  width: 41.3rem;
+  height: 24.8rem;
+  position: absolute;
+  left: 0;
+  top: 57.5rem;
+  background-color: #5bc882;
+}
+.fan-DFw .backgraund-SeV .rectangle-27-1N9 {
+  width: 41.1rem;
+  height: 14.9rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #1a5f73;
+}
+.fan-DFw .backgraund-SeV .box-hkm {
+  width: 41.1rem;
+  height: 82rem;
+  position: absolute;
+  left: 0.2rem;
+  top: 0;
+  box-shadow: inset 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), inset 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+.fan-DFw .backgraund-SeV .cycle-Zny {
+  width: 22.3rem;
+  height: 25.8rem;
+  position: absolute;
+  left: 9.4rem;
+  top: 9rem;
+}
+.fan-DFw .backgraund-SeV .cycle-Zny .ellipse-1-g6u {
+  width: 16.6rem;
+  height: 16.6rem;
+  position: absolute;
+  left: 2.8rem;
+  top: 2.7rem;
+  box-shadow: inset 0.4rem 0.2rem 0.6rem rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.6700000167);
+  border-radius: 8.3rem;
+}
+.fan-DFw .backgraund-SeV .cycle-Zny .c-6gR {
+  width: 4.9rem;
+  height: 3.1rem;
+  position: absolute;
+  left: 8.65rem;
+  top: 20rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #474952;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.fan-DFw .backgraund-SeV .cycle-Zny .image-2-Lam {
+  width: 9.7rem;
+  height: 9.7rem;
+  position: absolute;
+  left: 6.3rem;
+  top: 6.1rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.fan-DFw .backgraund-SeV .cycle-Zny .ellipse-2-GUR {
+  width: 22.3rem;
+  height: 22.3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  vertical-align: top;
+}
+.fan-DFw .backgraund-SeV .cycle-Zny .temperature-zQR {
+  width: 12.2rem;
+  height: 3.1rem;
+  position: absolute;
+  left: 5.05rem;
+  top: 22.7rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2675;
+  color: #464851;
+  font-family: Acme, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.fan-DFw .backgraund-SeV .cycle-Zny .ellipse-8-5wf {
+  width: 2.9rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 18.3rem;
+  top: 3.3rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.fan-DFw .backgraund-SeV .submenu2-ocm {
+  box-sizing: border-box;
+  padding: 1.4rem 3.298rem 1.8rem 3.189rem;
+  width: 16.4862rem;
+  height: 10.9rem;
+  position: absolute;
+  left: 22.0113rem;
+  top: 42.1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: rgba(246, 248, 252, 0.6499999762);
+  border-radius: 1rem;
+}
+.fan-DFw .backgraund-SeV .submenu2-ocm .image-7-2Ed {
+  margin: 0rem 0rem 1.167rem 0.271rem;
+  width: 4.6711rem;
+  height: 4.6325rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.fan-DFw .backgraund-SeV .submenu2-ocm .peltier-power-71B {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.fan-DFw .backgraund-SeV .submenu1-XKo {
+  box-sizing: border-box;
+  padding: 0.9rem 5.036rem 0.8rem 4.95rem;
+  width: 16.4862rem;
+  height: 10.9rem;
+  position: absolute;
+  left: 2.8rem;
+  top: 42.1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: rgba(246, 248, 252, 0.6499999762);
+  border-radius: 1rem;
+}
+.fan-DFw .backgraund-SeV .submenu1-XKo .image-8-cc9 {
+  margin-bottom: 0.9rem;
+  width: 5rem;
+  height: 5.1rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.fan-DFw .backgraund-SeV .submenu1-XKo .fan-speed-MJq {
+  margin: 0rem 0.1rem 0.1rem 0rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.fan-DFw .backgraund-SeV .submenu1-XKo .n-o-r-m-a-l-fqK {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.fan-DFw .backgraund-SeV .submenu3-B2y {
+  box-sizing: border-box;
+  padding: 1.6rem 3.416rem 2.399rem 3.006rem;
+  width: 35.8rem;
+  height: 11.4rem;
+  position: absolute;
+  left: 2.7rem;
+  top: 56.4rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: rgba(246, 248, 252, 0.6499999762);
+  border-radius: 1rem;
+}
+.fan-DFw .backgraund-SeV .submenu3-B2y .custom-temperature-qtD {
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: Caviar Dreams, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.fan-DFw .backgraund-SeV .submenu3-B2y .slider-aau {
+  width: 29.3779rem;
+  height: 4.5007rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+}
+.fan-DFw .backgraund-SeV .group-13-t5o {
+  box-sizing: border-box;
+  padding: 0.308rem 0.308rem 0.308rem 0.308rem;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 35.1rem;
+  top: 2rem;
+  background-color: rgba(255, 255, 255, 0.6499999762);
+  border-radius: 0.9rem;
+}
+.fan-DFw .backgraund-SeV .group-13-t5o .image-18-CMP {
+  width: 3.3846rem;
+  height: 3.3846rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.fan-DFw .backgraund-SeV .group-23-g1f {
+  box-sizing: border-box;
+  padding: 1.2rem 7.6rem 1.2rem 7.2rem;
+  width: 41rem;
+  height: 7.3rem;
+  position: absolute;
+  left: 0.1rem;
+  top: 75rem;
+  display: flex;
+  column-gap: 2.2rem;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6499999762);
+  border-radius: 3.65rem 3.65rem 0 0;
+}
+.fan-DFw .backgraund-SeV .group-23-g1f .auto-group-q6ob-tdX {
+  box-sizing: border-box;
+  padding: 0.7rem;
+  height: 100%;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #5da177;
+  border-radius: 2.45rem;
+  flex-shrink: 0;
+}
+.fan-DFw .backgraund-SeV .group-23-g1f .auto-group-q6ob-tdX .image-3-DA1 {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.fan-DFw .backgraund-SeV .group-23-g1f .auto-group-hcwd-hqs {
+  box-sizing: border-box;
+  padding: 0.9rem 0.8rem 0.8rem 0.8rem;
+  height: 100%;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #a4ddba;
+  border-radius: 2.45rem;
+  flex-shrink: 0;
+}
+.fan-DFw .backgraund-SeV .group-23-g1f .auto-group-hcwd-hqs .image-10-2NM {
+  width: 3.3rem;
+  height: 3.2rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.fan-DFw .backgraund-SeV .group-23-g1f .auto-group-by6h-V13 {
+  box-sizing: border-box;
+  padding: 0.8rem 0.7rem 0.7rem 0.8rem;
+  height: 100%;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #a4ddba;
+  border-radius: 2.45rem;
+  flex-shrink: 0;
+}
+.fan-DFw .backgraund-SeV .group-23-g1f .auto-group-by6h-V13 .image-10-EDX {
+  width: 3.4rem;
+  height: 3.4rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.fan-DFw .backgraund-SeV .group-23-g1f .auto-group-tkvq-vs3 {
+  box-sizing: border-box;
+  padding: 1.1rem 1rem 1rem 1rem;
+  height: 100%;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #a4ddba;
+  border-radius: 2.45rem;
+  flex-shrink: 0;
+}
+.fan-DFw .backgraund-SeV .group-23-g1f .auto-group-tkvq-vs3 .image-12-g5X {
+  width: 2.9rem;
+  height: 2.8rem;
+  object-fit: cover;
+  vertical-align: top;  
+}
+.fan-DFw .logo-3-NU9 {
+  width: 23.4rem;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: 2.6rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+
+#pumpButton {
+  background: transparent; /* Mengatur latar belakang menjadi transparan */
+  font-family: "Caviar Dreams", sans-serif; /* Mengatur font menjadi "Caviar Dreams" */
+  color: #000; /* Warna teks */
+  border: 2px solid #000; /* Garis tepi */
+  padding: 10px 20px; /* Padding tombol */
+  cursor: pointer; /* Mengubah kursor saat dihover */
+}
+
+#pumpButton:hover {
+  background: #000; /* Warna latar belakang saat dihover */
+  color: #fff; /* Warna teks saat dihover */
+}
