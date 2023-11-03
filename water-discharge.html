@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Water Discharge</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme%3A400"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caviar+Dreams%3A400%2C700"/>
+  <link rel="stylesheet" href="./styles/water-discharge.css"/>
+</head>
+<body>
+<div class="water-discharge-Y3K">
+  <div class="backgraund-g9X">
+    <img class="backgraund-1-1hb" src="./assets/backgraund-1.png"/>
+    <div class="rectangle-27-ic1">
+    </div>
+    <div class="rectangle-27-G7j">
+    </div>
+    <div class="box-oNZ">
+    </div>
+    <div class="cycle-7PF">
+      <div class="ellipse-1-3nh">
+      </div>
+      <p id="SoilMoisture" class="c-XC5">27°C</p>
+      <img class="ellipse-2-zrM" src="./assets/ellipse-2-bQm.png"/>
+      <p class="water-flow-MB7">Soil Moisture</p>
+      <img class="ellipse-8-Ekh" src="./assets/ellipse-8-oa9.png"/>
+      <img class="image-9-kDF" src="./assets/image-9-xvu.png"/>
+    </div>
+    <!-- <div class="submenu3-T7f">
+      <p class="custom-temperature-ZAh">CUSTOM TEMPERATURE</p>
+      <img class="slider-5eq" src="./assets/slider-JGy.png"/>
+    </div> -->
+    <div class="submenu2-M6Z">
+      <img class="image-7-S81" src="./assets/image-7.png"/>
+      <button id="pumpButton">PUMP ON</button>
+    </div>
+    <div class="submenu1-SGR">
+      <img class="image-10-8Q9" src="./assets/image-10.png"/>
+      <p class="water-flow-Re9">INDICATOR</p>
+      <p id="SoilMoistureIndicator" class="n-o-r-m-a-l-MXo">N O R M A L</p>
+    </div>
+    <div class="group-14-UMX">
+      <a href="notif.html">
+        <img class="image-18-Nho" src="./assets/image-18-SQH.png"/>
+      </a>
+    </div>
+    <div class="group-24-5cD">
+      <div class="auto-group-kynu-ySh">
+      <a href="fan.html">
+        <img class="image-3-Vvq" src="./assets/image-3-oeZ.png"/>
+      </a>
+      </div>
+      <div class="auto-group-8hvh-zMo">
+      <a href="water-discharge.html">
+        <img class="image-10-XsX" src="./assets/image-10-iaM.png"/>
+      </a>
+      </div>
+      <div class="auto-group-igu1-FoX">
+      <a href="humidity.html">
+        <img class="image-10-BhB" src="./assets/image-10-Vf7.png"/>
+      </a>
+      </div>
+      <div class="auto-group-qdjz-VC5">
+        <a href="vitamin.html">
+          <img class="image-12-DNy" src="./assets/image-12-Zyb.png"/>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+  <img class="logo-4-i4q" src="./assets/logo-4-V7o.png"/>
+</div>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+ 
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+  import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBBkeF6UNrJ9ukmqZZtvUC8olZ8fQihbeo",
+    authDomain: "smartacaveralpha.firebaseapp.com",
+    databaseURL: "https://smartacaveralpha-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "smartacaveralpha",
+    storageBucket: "smartacaveralpha.appspot.com",
+    messagingSenderId: "324099954906",
+    appId: "1:324099954906:web:653f7d37d2bbc2743c6de3"
+  };
+
+  // Initialize Firebase
+
+  var SoilMoistureElement = document.getElementById('SoilMoisture');
+  var SoilMoistureIndicatorElement = document.getElementById('SoilMoistureIndicator');
+  var pumpButton = document.getElementById('pumpButton');
+
+  var PumpValue = 1;
+
+  const app = initializeApp(firebaseConfig);
+
+  const database = getDatabase(app);
+  const SoilMoistureRef = ref(database, 'Smartaca/Soil');
+  const pumpRef = ref(database, 'pompa');
+
+  // Fungsi untuk mengubah nilai Peltier di Firebase
+
+  // Mendengarkan perubahan suhu
+  onValue(SoilMoistureRef, (snapshot) => {
+    const data = snapshot.val();
+    console.log(data);
+    if (SoilMoistureElement) {
+      SoilMoistureElement.textContent = data + "%";
+      if (data > 90) {
+        SoilMoistureIndicatorElement.textContent = "H O T";
+        PumpValue = 1;
+        peltierButton.textContent = 'ON';
+        set(pumpRef, PumpValue);
+        console.log('pumpValue:', PumpValue);
+      } else if (data < 80) {
+        SoilMoistureIndicatorElement.textContent = "C O L D";
+      } 
+      else {
+        SoilMoistureIndicatorElement
+        textContent = "N O R M A L";
+      } 
+    }
+  }, (error) => {
+    console.error(error);
+  });
+
+  // Menambahkan event listener untuk tombol Peltier
+  function showAlert() {
+  alert('Apalah');
+  }
+
+  pumpButton.addEventListener('click', function () {
+    // Ubah nilai peltierValue dari 1 ke 0 atau sebaliknya
+    if (PumpValue === 1) {
+      PumpValue = 0;
+      pumpButton.textContent = 'OFF';
+      set(pumpRef, PumpValue);
+      console.log('pumpValue:', PumpValue);
+    } else {
+      PumpValue = 1;
+      pumpButton.textContent = 'ON';
+      set(pumpRef, PumpValue);
+      console.log('pumpValue:', PumpValue);
+    }
+  });
+
+
+
+</script>
+
+</body>

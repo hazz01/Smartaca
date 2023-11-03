@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Fan</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme%3A400"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caviar+Dreams%3A400%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
+  <link rel="stylesheet" href="./styles/fan.css"/>
+</head>
+<body>
+<div class="fan-DFw">
+  <div class="backgraund-SeV">
+    <img class="backgraund-1-pHf" src="./assets/backgraund-1-ZvH.png"/>
+    <div class="rectangle-27-5jP">
+    </div>
+    <div class="rectangle-27-1N9">
+    </div>
+    <div class="box-hkm">
+    </div>
+    <div class="cycle-Zny">
+      <div class="ellipse-1-g6u">
+      </div>
+      <p id="Temp" class="c-6gR">...</p>
+      <img class="image-2-Lam" src="./assets/image-2-C25.png"/>
+      <img class="ellipse-2-GUR" src="./assets/ellipse-2.png"/>
+      <p class="temperature-zQR">temperature</p>
+      <img class="ellipse-8-5wf" src="./assets/ellipse-8.png"/>
+    </div>
+    <div class="submenu2-ocm">
+      <img class="image-7-2Ed" src="./assets/image-7-yXw.png"/>
+      <p id="TempPeltierPower" class="peltier-power-71B">
+        <button id="peltierButton">ON</button>
+      </p>
+      
+    </div>
+    <div class="submenu1-XKo">
+      <!-- <img class="image-8-cc9" src="./assets/image-8-NPs.png"/> -->
+      <br><br><br>
+      <p class="fan-speed-MJq">TEMPERATURE INDICATOR</p>
+      <p id="TempIndicator" class="n-o-r-m-a-l-fqK">N O R M A L</p>
+    </div>
+    <div class="submenu3-B2y">
+      <p class="custom-temperature-qtD">TEMPERATURE LEVEL</p>
+      <img class="slider-aau" src="./assets/slider.png"/>
+    </div>
+    <div class="group-13-t5o">
+      <a href="notif.html">
+        <img class="image-18-CMP" src="./assets/image-18-Tow.png"/>
+      </a>
+    </div>
+    <div class="group-23-g1f">
+      <div class="auto-group-q6ob-tdX">
+        <a href="fan.html">
+          <img class="image-3-DA1" src="./assets/image-3.png"/>
+        </a>
+      </div>
+      <div class="auto-group-hcwd-hqs">
+        <a href="water-discharge.html">
+          <img class="image-10-2NM" src="./assets/image-10-jDj.png" alt="Klik untuk navigasi ke halaman water-discharge.html">
+        </a>
+      </div>
+      <div class="auto-group-by6h-V13">
+        <a href="humidity.html">
+          <img class="image-10-EDX" src="./assets/image-10-rEm.png"/>
+        </a>
+      </div>
+      <div class="auto-group-tkvq-vs3">
+        <a href="vitamin.html">
+          <img class="image-12-g5X" src="./assets/image-12.png"/>
+        </a>
+      </div>
+    </div>
+  </div>
+  <img class="logo-3-NU9" src="./assets/logo-3.png"/>
+</div>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+ 
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+  import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBBkeF6UNrJ9ukmqZZtvUC8olZ8fQihbeo",
+    authDomain: "smartacaveralpha.firebaseapp.com",
+    databaseURL: "https://smartacaveralpha-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "smartacaveralpha",
+    storageBucket: "smartacaveralpha.appspot.com",
+    messagingSenderId: "324099954906",
+    appId: "1:324099954906:web:653f7d37d2bbc2743c6de3"
+  };
+
+  // Initialize Firebase 
+
+  var temperatureElement = document.getElementById('Temp');
+  var TempIndicatorElement = document.getElementById('TempIndicator');
+  var peltierButton = document.getElementById('peltierButton');
+
+  var peltierValue = 1;
+
+  const app = initializeApp(firebaseConfig);
+
+  const database = getDatabase(app);
+  const tempRef = ref(database, 'Smartaca/Temp');
+  const peltierRef = ref(database, 'peltier');
+
+  // Fungsi untuk mengubah nilai Peltier di Firebase
+
+  // Mendengarkan perubahan suhu
+  onValue(tempRef, (snapshot) => {
+    const data = snapshot.val();
+    console.log(data);
+    if (temperatureElement) {
+      temperatureElement.textContent = data + "°C";
+      if (data > 20) {
+        TempIndicatorElement.textContent = "H O T";
+        peltierValue = 1;
+        peltierButton.textContent = 'ON';
+        set(peltierRef, peltierValue);
+        console.log('peltierValue:', peltierValue);
+      } else if (data < 15) {
+        TempIndicatorElement.textContent = "C O L D";
+        peltierValue = 0;
+        peltierButton.textContent = 'OFF';
+        set(peltierRef, peltierValue);
+        console.log('peltierValue:', peltierValue);
+      } 
+      else {
+        TempIndicatorElement.textContent = "N O R M A L";
+        peltierValue = 0;
+        peltierButton.textContent = 'OFF';
+        set(peltierRef, peltierValue);
+        console.log('peltierValue:', peltierValue);
+      } 
+    }
+  }, (error) => {
+    console.error(error);
+  });
+
+  // Menambahkan event listener untuk tombol Peltier
+  function showAlert() {
+  alert('Apalah');
+  }
+
+
+  peltierButton.addEventListener('click', function () {
+    // Ubah nilai peltierValue dari 1 ke 0 atau sebaliknya
+    if (peltierValue === 1) {
+      peltierValue = 0;
+      peltierButton.textContent = 'OFF';
+      set(peltierRef, peltierValue);
+      console.log('peltierValue:', peltierValue);
+    } else {
+      peltierValue = 1;
+      peltierButton.textContent = 'ON';
+      set(peltierRef, peltierValue);
+      console.log('peltierValue:', peltierValue);
+    }
+  });
+
+
+</script>
+
+</body>

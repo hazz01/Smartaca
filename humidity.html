@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Humidity</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caviar+Dreams%3A400%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme%3A400"/>
+  <link rel="stylesheet" href="./styles/humidity.css"/>
+</head>
+<body>
+<div class="humidity-k3K">
+  <div class="backgraund-gxZ">
+    <img class="backgraund-1-2mX" src="./assets/backgraund-1-DPw.png"/>
+    <div class="rectangle-27-M37">
+    </div>
+    <div class="rectangle-27-GQy">
+    </div>
+    <div class="box-Q1P">
+    </div>
+    <div class="cycle-7gV">
+      <div class="ellipse-1-TEZ">
+      </div>
+      <p id="Humidity" class="item-70-iwB">70%</p>
+      <img class="image-9-d2Z" src="./assets/image-9-D77.png"/>
+      <img class="ellipse-2-mPf" src="./assets/ellipse-2-kzm.png"/>
+      <p class="humidity-5QM">humidity</p>
+      <img class="ellipse-8-NeM" src="./assets/ellipse-8-Uc9.png"/>
+    </div>
+    <div class="submenu3-u8V">
+      <p class="custom-temperature-ZD3">CUSTOM TEMPERATURE</p>
+      <img class="slider-goT" src="./assets/slider-WuF.png"/>
+    </div>
+    <div class="submenu2-kHX">
+      <img class="image-7-r5f" src="./assets/image-7-PMb.png"/>
+      <p class="power-As3">POWER</p>
+    </div>
+    <div class="submenu1-QFb">
+      <!-- <img class="image-8-sus" src="./assets/image-8.png"/> -->
+      <BR><BR><BR>
+      <p class="humidity-2Gy">INDICATOR HUMIDITY</p>
+      <p id="HumidityIndicator" class="n-o-r-m-a-l-Wxq">N O R M A L</p>
+    </div>
+    <div class="group-15-2gH">
+      <a href="notif.html">
+        <img class="image-18-YuX" src="./assets/image-18-FAy.png"/>
+      </a>
+    </div>
+    <div class="group-25-4N5">
+      <div class="auto-group-njgh-KYu">
+        <a href="fan.html">
+        <img class="image-3-saR" src="./assets/image-3-u8M.png"/>
+      </a>
+      </div>
+      <div class="auto-group-gffw-9Xw">
+        <a href="water-discharge.html">
+        <img class="image-10-J9w" src="./assets/image-10-bku.png"/>
+      </a>
+      </div>
+      <div class="auto-group-fon9-cwK">
+        <a href="humidity.html">
+        <img class="image-10-mZK" src="./assets/image-10-pLh.png"/>
+      </a>
+      </div>
+      <div class="auto-group-izcd-VkD">
+        <a href="vitamin.html">
+        <img class="image-12-SvM" src="./assets/image-12-3fX.png"/>
+      </a>
+      </div>
+    </div>
+  </div>
+  <img class="logo-3-6ED" src="./assets/logo-3-sYV.png"/>
+</div>
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+ 
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+  import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBBkeF6UNrJ9ukmqZZtvUC8olZ8fQihbeo",
+    authDomain: "smartacaveralpha.firebaseapp.com",
+    databaseURL: "https://smartacaveralpha-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "smartacaveralpha",
+    storageBucket: "smartacaveralpha.appspot.com",
+    messagingSenderId: "324099954906",
+    appId: "1:324099954906:web:653f7d37d2bbc2743c6de3"
+  };
+
+  // Initialize Firebase
+
+  var HumidityElement = document.getElementById('Humidity');
+  var HumidityIndicatorElement = document.getElementById('HumidityIndicator');
+
+  const app = initializeApp(firebaseConfig);
+
+  const database = getDatabase(app);
+  const HumidityRef = ref(database, 'Smartaca/Humidity');
+  const peltierRef = ref(database, 'peltier');
+
+  // Fungsi untuk mengubah nilai Peltier di Firebase
+
+  // Mendengarkan perubahan suhu
+  onValue(HumidityRef, (snapshot) => {
+    const data = snapshot.val();
+    console.log(data);
+    if (HumidityElement) {
+      HumidityElement.textContent = data + "%";
+      if (data > 65) {
+        HumidityIndicatorElement.textContent = "H I G H";
+      } else if (data < 54) {
+        HumidityIndicatorElement.textContent = "L O W";
+      } 
+      else {
+        HumidityIndicatorElement
+        textContent = "N O R M A L";
+      } 
+    }
+  }, (error) => {
+    console.error(error);
+  });
+
+  // Menambahkan event listener untuk tombol Peltier
+  function showAlert() {
+  alert('Apalah');
+  }
+
+  peltierButton.addEventListener('click', togglePeltier);
+
+
+</script>
+
+
+</body>
